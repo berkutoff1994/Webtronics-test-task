@@ -1,0 +1,18 @@
+@import '../main.module.scss';
+
+.contactsWrapper {
+  @include flex-col-center;
+  @include background-null-alfa;
+  padding: 55px 0;
+  border-radius: 20px;
+  border: 1px solid $blue;
+
+  .contactsTitle {
+    margin-bottom: 15px;
+  }
+  
+  .contactsSubtitle {
+    margin-bottom: 25px;
+    @include size-16;
+  }
+}

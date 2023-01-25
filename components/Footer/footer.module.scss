@@ -1,0 +1,53 @@
+@import '../Main/main.module.scss';
+
+.footerWrapper {
+  padding: 35px 0;
+  @include background-null-alfa;
+
+  .footer {
+    @include flex-row;
+
+    .footerLogoBlock {
+      max-width: 35%;
+      width: 100%;
+
+      .footerLogo {
+        margin-bottom: 25px;
+      }
+    }
+    
+  
+    .footerNav {
+      @include flex-col;
+      max-width: 35%;
+      width: 100%;
+  
+      .footerNavTitle {
+        margin-bottom: 25px;
+        @include size-18;
+      }
+
+      ul {
+        flex-wrap: wrap;
+      }
+      ul li {
+        width: 50%;
+        @include size-14;
+      }
+      ul li:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
+
+    .footerLinksBlock {
+      @include flex-col;
+
+      .footerLinksTitle {
+        margin-bottom: 25px;
+      }
+      .footerSocialLinks {
+        @include flex-row;
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+@import '../main.module.scss';
+
+.reviewWrapper {
+  @include flex-col-center;
+
+  h2 {
+    margin-bottom: 50px;
+  }
+
+  .reviewContent {
+    display: flex;
+    
+    .reviewLeftBlock {
+      @include flex-col;
+      width: 35%;
+      padding: 115px 25px 0 0;
+    }
+
+    .reviewRightBlock {
+      @include flex-col;
+      flex-grow: 1;
+      
+      .reviewNavigation {
+        @include flex-row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+
+        .counterBlock {
+          @include flex-row;
+          align-items: flex-start;
+
+          .presentValue {
+            margin-right: 8px;
+            @include size-24;
+          }
+          .totalValue {
+            @include size-16;
+          }
+        }
+
+        .btnsBlock {
+          @include flex-row;
+          position: relative;
+          z-index: 100000;
+
+          .sliderBtn {
+            background: none;
+            border: none;
+          }
+          .nextBtn {
+            margin-left: 25px;
+          }
+        }
+      }
+
+      .imagesBlock {
+        @include flex-row;
+
+        .imageContainer {
+          position: relative;
+          z-index: 100000;
+          overflow: hidden;
+          border-radius: 15px;
+          outline: 1px solid $darkBlue;
+          max-height: 422px;
+
+          &:not(:last-child) {
+            margin-right: 25px;
+          }
+
+          .imageSlide {
+            position: relative;
+            height: 100%;
+            
+          }
+        }
+        .imageContainerActive {
+          @include flex-row-center
+        }
+      }
+    }
+  }
+
+}

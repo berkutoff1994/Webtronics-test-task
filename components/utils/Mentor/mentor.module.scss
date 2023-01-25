@@ -1,0 +1,17 @@
+@import '../../Main/About/about.module.scss';
+
+.aboutMentor {
+  position: relative;
+  
+  .aboutMentorImage {
+    margin-bottom: 15px;
+    border-radius: 100px;
+    outline: 1px solid $blue;
+  }
+  .aboutMentorName {
+    @include size-24;
+  }
+  .aboutMentorDescr {
+    @include size-14
+  }
+}

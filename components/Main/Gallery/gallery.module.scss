@@ -1,0 +1,51 @@
+@import '../main.module.scss';
+
+.galleryWrapper {
+  @include flex-col-center;
+
+  .galleryTitle {
+    margin-bottom: 50px;
+  }
+
+  .contentBlock {
+    @include flex-row;
+    position: relative;
+    z-index: 10000;
+
+    .galleryImage {
+      border-radius: 16px;
+    }
+
+    .leftContentBlock {
+      margin-right: 25px;
+
+      .leftContentDescr {
+        margin-bottom: 85px;
+
+      }
+    }
+
+    .rightContentBlock {
+      @include flex-col-spase-btw;
+
+      .rightImagesBlock {
+        @include flex-row;
+
+        .rightMainImage {
+          margin-right: 25px;
+
+          .mainImage {
+            height: 100%;
+          }
+        }
+        .rightAdditionaryImages {
+          @include flex-col;
+
+          .additionaryFirstImage {
+            margin-bottom: 25px;
+          }
+        }
+      }
+    }
+  }
+}

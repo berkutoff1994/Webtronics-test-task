@@ -1,0 +1,38 @@
+@import '../main.module.scss';
+
+.aboutWrapper {
+  @include flex-col-center;
+
+  .mainTitles {
+    position: relative;
+    top: -70px;
+  }
+
+  .aboutMentors {
+    @include flex-row;
+
+    .aboutMentorsBlock {
+      @include flex-col-center;
+      width: 50%;
+
+      .aboutMentorsTitle {
+        margin-bottom: 10px;
+        @include size-32;
+      }
+
+      .aboutMentorsImages {
+        @include flex-row;
+        padding-left: 10px;
+
+        &:first-child {
+          position: relative;
+        }
+      }
+    }
+
+    .aboutMentorsDescr {
+      max-width: 500px;
+      padding-top: 120px;
+    }
+  }
+}

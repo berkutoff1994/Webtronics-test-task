@@ -1,0 +1,57 @@
+@import '../../Main/main.module.scss';
+
+.tabWrapper {
+  width: 100%;
+  margin-bottom: 24px;
+  @include size-16;
+
+  .tab{
+    position: relative;
+    padding: 28px 24px;
+    @include background-null-alfa;
+    border-radius: 8px;
+  
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 0;
+      height: 0;
+      border-top: 28px solid $backBlue; 
+      border-right: 28px solid transparent;		
+    }
+    
+    &:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 0;
+      height: 0;
+      border-bottom: 28px solid $backBlue; 
+      border-left: 28px solid transparent;
+    }
+
+    .tabTitle {
+      @include flex-row;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      z-index: 10000;
+
+      h3 {
+        @include size-24;
+      }
+
+      svg {
+        padding: 5px;
+        cursor: pointer;
+      }
+    }
+
+    .tabDescr {
+      margin-top: 15px;
+    }
+  }
+}

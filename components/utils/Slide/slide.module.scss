@@ -1,0 +1,14 @@
+@import '/components/Main/main.module.scss';
+
+.slideDescrBlock {
+  padding: 10px 0;
+
+  .slideSubtitle {
+    margin-bottom: 15px;
+    @include size-24;
+
+    .slideDescr {
+      @include size-16;
+    }
+  }
+}

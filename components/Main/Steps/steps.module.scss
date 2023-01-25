@@ -1,0 +1,172 @@
+@import '../main.module.scss';
+
+.stepsWrapper {
+  @include flex-col-center;
+
+  h2 {
+    margin-bottom: 75px;
+  }
+
+  .stepsCardBlock {
+    @include flex-row;
+    justify-content: space-between;
+    width: 100%;
+
+    .stepsCardLeft {
+      max-width: 475px;
+    }
+    .stepsCardRight {
+      max-width: 475px;
+      padding-top: 130px;
+    }
+
+    .stepsItemLine {
+      position: relative;
+
+      &:not(:last-child) {
+        margin-bottom: 180px;
+      }
+
+      &:not(:last-child):after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: -137px;
+        width: 4px;
+        height: calc(100% + 180px);
+        background: linear-gradient(180deg, #1FF2FF 0%, #27F9E5 52.66%, #2FFFCD 100%);
+      }
+
+      .stepsItemBack {
+        position: relative;
+        margin: 0 auto;
+        padding: 18px;
+        border: 5px solid transparent;
+        @include radius-8;
+        border-image-slice: 1;
+        z-index: 100;
+      
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 100%;
+          width: 200px;
+          background: linear-gradient(90deg, rgba(21, 191, 253, 0) 8.03%, rgba(21, 191, 253, 0.7) 69.15%, rgba(156, 55, 253, 0.7) 97.95%);
+          background-repeat: no-repeat;
+          @include radius-8;
+          z-index: 0;
+        }
+        &:after {
+          content: "";
+          position: absolute;
+          top: 5px;
+          bottom: 5px;
+          left: 0;
+          right: 5px;
+          background: $backBlue;
+          z-index: 1;
+          border-radius: 8px;
+        }
+  
+        .arrowBlock {
+          position: absolute;
+          @include flex-row-center;
+          top: calc(50% - 5px);
+          right: -152px;
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    .stepsItemRightLine {
+      position: relative;
+
+      &:not(:last-child) {
+        margin-bottom: 180px;
+      }
+
+      &:not(:last-child):after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -137px;
+        width: 4px;
+        height: calc(100% + 180px);
+        background: linear-gradient(180deg, #1FF2FF 0%, #27F9E5 52.66%, #2FFFCD 100%);
+      }
+
+      .stepsItemBackRight {
+        position: relative;
+        margin: 0 auto;
+        padding: 18px;
+        border: 5px solid transparent;
+        @include radius-8;
+        border-image-slice: 1;
+        z-index: 100;
+  
+        &:not(:last-child) {
+          margin-bottom: 180px;
+  
+        }
+      
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: -5px;
+          height: 100%;
+          width: 200px;
+          background: linear-gradient(90deg, rgba(21, 191, 253, 0) 8.03%, rgba(21, 191, 253, 0.7) 69.15%, rgba(156, 55, 253, 0.7) 97.95%);
+          transform: matrix(-1, 0, 0, 1, 0, 0);
+          background-repeat: no-repeat;
+          @include radius-8;
+          z-index: 0;
+        }
+        &:after {
+          content: "";
+          position: absolute;
+          top: 5px;
+          bottom: 5px;
+          left: 0;
+          right: 5px;
+          background: $backBlue;
+          z-index: 1;
+          @include radius-8;
+        }
+  
+        .arrowBlock {
+          position: absolute;
+          top: calc(50% - 5px);
+          left: -152px;
+          @include flex-row-center;
+        }
+      }
+    }
+    
+
+    .stepsItemCard {
+      display: flex;
+      flex-direction: column;
+      padding: 25px;
+      min-height: 190px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 8px;
+      border: 1px solid $darkBlue;
+      position: relative;
+      z-index: 100;
+
+      .stepsItemTitle {
+        @include size-24;
+      }
+      .stepsItemSubtitle {
+        @include size-32;
+      }
+      .stepsItemDescr {
+        color: #A2CBFB;
+        @include size-16;
+      }
+    }
+  }
+}

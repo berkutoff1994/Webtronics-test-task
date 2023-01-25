@@ -1,0 +1,18 @@
+@import '../../styles/Home.module.scss';
+
+.container {
+  max-width: 1260px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.section {
+  position: relative;
+  margin-bottom: 180px;
+  @include size-16;
+}
+
+.mainTitles {
+  @include size-72;
+}

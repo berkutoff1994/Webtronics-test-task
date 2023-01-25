@@ -1,0 +1,18 @@
+@import '../../../styles/Home.module.scss';
+
+.myButton {
+  padding: 24px 32px;
+  border: none;
+  @include radius-8;
+  background: linear-gradient(180deg, #1FF2FF 0%, #27F9E5 52.66%, #2FFFCD 100%);
+  color: $darkBlue;
+  transition: color 0.3s ease-in-out;
+  @include size-20;
+
+  &:hover {
+    color: $blueHover;
+  }
+  &:active {
+    color: $white;
+  }
+}

@@ -1,0 +1,31 @@
+@import '../main.module.scss';
+
+.FAQWrapper {
+  @include flex-col;
+
+  .FAQTitle {
+    @include flex-col-center;
+    margin-bottom: 55px;
+  }
+
+  .FAQContentWrapper {
+    @include flex-row;
+
+    .FAQContentLeft {
+      @include flex-col;
+
+      .FAQContentDescr {
+        margin-bottom: 55px;
+      }
+      .FAQContentImage {
+        padding: 0 75px;
+      }
+    }
+  }
+
+  .FAQContentRight {
+    @include flex-col;
+    flex-grow: 1;
+    padding-left: 25px;
+  }
+}

@@ -1,0 +1,15 @@
+@import '../../Main/main.module.scss';
+
+.cardWrapper {
+  @include flex-col-center;
+  padding: 28px 15px;
+  background: url('../../../public/Subtract.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  backdrop-filter: blur(5px);
+  @include size-24;
+
+  .cardImageBlock {
+    margin-bottom: 15px;
+  }
+}

@@ -1,0 +1,13 @@
+@import '../../styles/Home.module.scss';
+
+.container {
+  @include container;
+}
+
+.headerWrapper {
+  @include flex-row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0 0 0;
+  @include size-16
+}

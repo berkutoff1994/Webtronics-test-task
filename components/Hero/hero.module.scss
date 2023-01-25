@@ -1,0 +1,37 @@
+@import '../../styles/Home.module.scss';
+
+.container {
+  @include container;
+
+  .heroWrapper {
+    position: relative;
+    padding: 115px 0 100px 0;
+
+    .heroTitle {
+      @include size-150;
+
+      .heroSecondTitle {
+        position: relative;
+        left: 320px;
+      }
+      .heroThirdTitle {
+        position: relative;
+        right: -87%;
+        bottom: 120px;
+        @include size-32;
+      }
+    }
+
+    .heroText {
+      position: absolute;
+      top: 26%;
+      right: 2%;
+      max-width: 360px;
+    }
+
+    .heroButtonWrapper {
+      position: absolute;
+      top: 46%;
+    }
+  }
+}

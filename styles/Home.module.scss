@@ -1,0 +1,112 @@
+$blue: #15BFFD;
+$backBlue: #0C102D;
+$darkBlue: #0A1482;
+$blueHover: #3B48D0;
+$white: #FFFFFF;
+$errorRed: #FD4646;
+
+@mixin radius-8{
+  border-radius: 8px;
+}
+
+@mixin background-null-alfa {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+@mixin size-14 {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+@mixin size-16 {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+@mixin size-18 {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+@mixin size-20 {
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+@mixin size-24 {
+  font-family: 'Clash Display';
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+}
+
+@mixin size-32 {
+  font-family: 'Clash Display';
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 120%;
+}
+
+@mixin size-72 {
+  font-family: 'Clash Display';
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 1;
+}
+
+@mixin size-150 {
+  font-family: 'Clash Display';
+  font-weight: 600;
+  font-size: 150px;
+  line-height: 120%;
+}
+
+@mixin flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flex-col-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin flex-col-spase-btw {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@mixin flex-row-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin container {
+  max-width: 1260px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.headerAndHeroWrapper {
+  width: 100%;
+  background: linear-gradient(180deg, rgba(12, 16, 45, 0) -4.71%, #0C102D 97.38%), url('../public/background_hero.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
