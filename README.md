@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).<br/>
+Figma: <a href='https://www.figma.com/file/SwS8oFguiIYFsEFUfim60Q/landing-(Copy)?node-id=5%3A102&t=NIVc8SpTmqRAGDhX-0'>link</a><br/>
+Deployment: <a href='https://webtronics-test-task.vercel.app/'>link</a>
 
 ## Getting Started Server
 
